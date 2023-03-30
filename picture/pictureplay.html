@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Website Page Design - Xu Xiake's Tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #9b906e;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      text-align: center;
+      line-height: 20px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 150px;
+      padding-bottom: 100px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 380px;
+      height: 450px;
+      background: #FDF5E6;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    .head {
+      color: #FDF5E6;
+      font-size: 25px;
+      font-weight: 550;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="head" style="width: 100%;height:40px;background: #9b906e;">
+    <pre class="head"><br>Xu Xiake's Travel Scenery</pre>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="衡山.jpg" />
+        <h3>衡 山<br>1613/05/18<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="雁荡山.jpg" />
+        <h3>雁 荡 山<br>1613/05/30<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="庐山.jpg" />
+        <h3>庐 山<br>1618/10/06<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="江郎山.jpg" />
+        <h3>江 郎 山<br>1620/06/23<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="九鲤湖.jpg" />
+        <h3>九 鲤 湖<br>1620/07/07<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="嵩山.jpg" />
+        <h3>嵩 山<br>1623/03/07<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="华山.jpg" />
+        <h3>华 山<br>1623/04/01<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="天台山.jpg" />
+        <h3>天 台 山<br>1632/5/3<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="五台山.jpg" />
+        <h3>五 台 山<br>1633/09/07<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="恒山.jpg" />
+        <h3>恒 山<br>1633/09/12<span></span></h3>
+      </div>
+      <div class="swiper-slide">
+        <img src="丽江.jpg" />
+        <h3>丽 江<br>1639/02/28<span></span></h3>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
